@@ -1,4 +1,4 @@
-package com.comic.comicmarvel
+package com.comic.comicmarvel.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
+import com.comic.comicmarvel.R
 import com.comic.comicmarvel.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         val delayMillis = 2000L // Tiempo en milisegundos
         Handler().postDelayed({
 
-            val intent = Intent(this, Comics::class.java)
+            val intent = Intent(this, ComicsActivity::class.java)
             startActivity(intent)
             finish()
 

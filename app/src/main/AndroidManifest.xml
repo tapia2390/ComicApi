@@ -16,16 +16,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Comics"
+            android:name=".ui.ComicsActivity"
             android:exported="false" />
 
-        <service
-            android:name=".conexionRetrofit.ApiService"
-            android:enabled="true"
-            android:exported="true" />
+
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
