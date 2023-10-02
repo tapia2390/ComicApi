@@ -1,12 +1,13 @@
 package com.comic.comicmarvel
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
-import androidx.activity.viewModels
+import android.view.animation.AnimationUtils
 import com.comic.comicmarvel.databinding.ActivityMainBinding
-import com.comic.comicmarvel.fragment.comic.ComicViewModel
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +23,23 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setContentView(R.layout.activity_main)
+
+        val animation = AnimationUtils.loadAnimation(this, R.anim.scale_animation)
+        binding.imgLogo.startAnimation(animation)
+
+        val delayMillis = 2000L // Tiempo en milisegundos
+        Handler().postDelayed({
+
+            val intent = Intent(this, Comics::class.java)
+            startActivity(intent)
+            finish()
+
+        }, delayMillis)
+
+
+
     }
 }

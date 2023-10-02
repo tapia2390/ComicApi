@@ -15,10 +15,14 @@
         android:theme="@style/Theme.ComicMarvel"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Comics"
+            android:exported="false" />
+
         <service
             android:name=".conexionRetrofit.ApiService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
