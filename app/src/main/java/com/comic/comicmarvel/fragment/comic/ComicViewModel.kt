@@ -1,4 +1,4 @@
-package com.comic.comicmarvel
+package com.comic.comicmarvel.fragment.comic
 
 import androidx.lifecycle.ViewModel
 

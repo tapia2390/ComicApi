@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">comicMarvel</string>
+    <string name="publickey">644b81ae9d083e253dcfc71af9e3c3f9</string>
+    <string name="privatekey">ac665eb9763d49fb1c782cb78ead25350c4e4113</string>
+    <string name="url">https://gateway.marvel.com:443/v1/public/comics</string>
+    <string name="hashconvert">3394fb237746152ed9affa307700087f</string>
+    <string name="hash">1ac665eb9763d49fb1c782cb78ead25350c4e4113644b81ae9d083e253dcfc71af9e3c3f9</string>
 </resources>
