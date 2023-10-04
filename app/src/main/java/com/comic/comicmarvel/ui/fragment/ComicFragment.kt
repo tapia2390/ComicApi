@@ -23,13 +23,15 @@ class ComicFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentComicBinding.inflate(inflater, container, false)
+        viewModel = ViewModelProvider(this).get(ComicViewModel::class.java)
+
+        viewModel.text.observe(viewLifecycleOwner) {
+            binding.hola.text = it
+        }
+
         return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ComicViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }
