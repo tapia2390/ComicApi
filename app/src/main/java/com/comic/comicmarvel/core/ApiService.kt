@@ -1,6 +1,6 @@
-package com.comic.comicmarvel.conexionRetrofit
+package com.comic.comicmarvel.core
 
-import com.comic.comicmarvel.model.ComicResponse
+import com.comic.comicmarvel.data.model.ComicResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

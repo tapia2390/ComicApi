@@ -16,13 +16,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ui.ComicsActivity"
-            android:exported="false" />
+            android:name=".ui.view.ComicsActivity"
+            android:exported="true" />
 
 
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

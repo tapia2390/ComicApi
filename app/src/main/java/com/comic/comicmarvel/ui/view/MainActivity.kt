@@ -1,4 +1,4 @@
-package com.comic.comicmarvel.ui
+package com.comic.comicmarvel.ui.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

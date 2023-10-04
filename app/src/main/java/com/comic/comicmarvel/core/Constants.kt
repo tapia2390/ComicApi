@@ -1,4 +1,4 @@
-package com.comic.comicmarvel.conexionRetrofit
+package com.comic.comicmarvel.core
 
 object Constants {
     const val BASE_URL = "https://gateway.marvel.com/v1/public/"
